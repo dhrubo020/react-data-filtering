@@ -12,10 +12,7 @@ export const filterItemContext = createContext();
 const Home = () => {
     const [product, setProduct] = useContext(dataContext); // load context data
 
-    let test = []
-    test = product;
-    
-    const [filterData, setFilterData] = useState(test) // set filter data
+    const [filterData, setFilterData] = useState(product) // set filter data
     console.log("onload ", filterData)
     const [filterClass, setClass] = useState(0) // set filter state
     const clickBtn = (props) =>{
